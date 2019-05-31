@@ -1,0 +1,145 @@
+
+
+body{
+  background-color: black;
+  }
+#barra{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #5b7989;
+  width: 100%;
+  border-radius:10px 10px 0 0;
+  }
+  .titulo{
+  color: white;
+  font-size: 0.6em;
+  text-shadow: 2px 2px 2px  #02010a;
+  font-family: 'Dancing Script', cursive;
+  padding-top: 5px;
+  padding-left: 10px;
+  }
+
+.links{
+  color: white;
+  font-size: 0.5em;
+  font-family: 'Dancing Script', cursive;
+  padding-right: 20px;
+  padding-top: 7px;
+  }
+a{
+color:white;
+text-decoration: none;
+}
+#cuadro1{
+background-color:#82c3a6;
+width: 100%;
+}
+.imagen1{
+padding: 20px;
+}
+section{
+font-family: 'Dancing Script', cursive;
+display: flex;
+justify-content: space-around;
+align-items: center;
+background-color: #d5c75f;
+width: 100%;
+border: 1px;
+}
+
+#imgI{
+  margin: 20px;
+}
+#imgD{
+  margin: 20px;
+}
+#imgI a img,
+#imgD a img {
+width: 100%
+}
+#imgD h2,
+#imgI h2{
+text-align: center;
+}
+a [src="img/paisaje2.jpg"]{
+-webkit-filter:drop-shadow();
+transform: none;
+transition: transform, 1.5s;
+transition:-webkit-filter,1.5s;
+border: 10px;
+}
+a [src="img/paisaje2.jpg"]:hover{
+  -webkit-filter:drop-shadow(4px 4px 4px #82c3a6);
+  transform:rotate(10deg);
+  }
+a [src="img/retrato.jpg"]{
+  -webkit-filter:drop-shadow();
+  transform: none;
+  transition: transform, 1.5s;
+  transition:-webkit-filter,1.5s;
+  }
+a [src="img/retrato.jpg"]:hover{
+  transform:translate(20px,-5px);
+  -webkit-filter:drop-shadow(4px 4px 4px #82c3a6);
+  }
+footer{
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: 'Dancing Script', cursive;
+  display: flex;
+  flex-flow: row wrap;
+  background-color: #C6d5c5;
+  width: 100%;
+  border: 1px;
+  border-radius:0 0 10px 10px;
+  }
+.facebook{
+vertical-align: text-top;
+}
+.instagram{
+vertical-align: text-top;
+}
+.youtube{
+vertical-align: text-top;
+}
+footer article {
+text-align: center;
+width: 25%;
+}
+
+@media (min-width:900px){
+.cuerpo{
+width: 900px;
+margin: auto;
+display: block;
+}
+}
+
+@media (max-width:900px){
+section{
+flex-direction: column;
+align-items: center;
+}
+}
+@media (max-width:900px){
+footer{
+flex-direction: column;
+align-items: center;
+}
+}
+@media (max-width:900px){
+#barra{
+flex-direction: column;
+}
+}
+header{
+-webkit-animation: animacion 2s;
+animation-name:animacion;
+animation-duration: 2s;
+}
+@-webkit-keyframes animacion {
+  0%   {margin-top: 150%;}
+  60%  {margin-top: -5%;}
+  100%  {margin-top: 0%;}
+}

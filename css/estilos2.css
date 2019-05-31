@@ -1,0 +1,144 @@
+
+
+body{
+  background-color: black;
+  }
+#barra{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #5b7989;
+  width: 100%;
+  border-radius:10px 10px 0 0;
+  }
+  .titulo{
+  color: white;
+  font-size: 0.6em;
+  text-shadow: 2px 2px 2px  #02010a;
+  font-family: 'Dancing Script', cursive;
+  padding-top: 5px;
+  padding-left: 10px;
+  }
+
+.links{
+  color: white;
+  font-size: 0.5em;
+  font-family: 'Dancing Script', cursive;
+  padding-right: 20px;
+  padding-top: 7px;
+  }
+a{
+color:white;
+text-decoration: none;
+}
+#general{
+background-color: #d5c75f;
+width:100%;
+}
+.contenido{
+display:flex;
+flex-direction:row;
+
+}
+.contenido2{
+display:flex;
+flex-direction:row;
+}
+.pa1{
+width:90%;
+padding: 5%;
+-webkit-filter:blur(10 px);
+filter:blur(10px);
+}
+.pa2{
+  width:90%;
+  padding: 5%;
+  -webkit-filter:grayscale(100%);
+  filter:grayscale(100%);
+}
+.pa3{
+  width:90%;
+  padding: 5%;
+  -webkit-filter:sepia(90%);
+  filter:sepia(90%);
+}
+.pa4{
+  width:90%;
+  padding: 5%;
+  -webkit-filter:grayscale(100%);
+  filter:grayscale(100%);
+}
+.pa5{
+  width:90%;
+  padding: 5%;
+}
+.pa6{
+  width:90%;
+  padding: 5%;
+  -webkit-filter:grayscale(100%);
+  filter:grayscale(100%);
+}
+footer{
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: 'Dancing Script', cursive;
+  display: flex;
+  flex-flow: row wrap;
+  background-color: #C6d5c5;
+  width: 100%;
+  border: 1px;
+  border-radius:0 0 10px 10px;
+  }
+.facebook{
+vertical-align: text-top;
+}
+.instagram{
+vertical-align: text-top;
+}
+.youtube{
+vertical-align: text-top;
+}
+footer article {
+text-align: center;
+width: 25%;
+}
+@media (min-width:900px){
+.cuerpo{
+width: 900px;
+margin: auto;
+display: block;
+}
+}
+@media (max-width:900px){
+.contenido{
+flex-direction: column;
+align-items: center;
+}
+}
+@media (max-width:900px){
+.contenido2{
+flex-direction: column;
+align-items: center;
+}
+}
+@media (max-width:900px){
+footer{
+flex-direction: column;
+align-items: center;
+}
+}
+@media (max-width:900px){
+#barra{
+flex-direction: column;
+}
+}
+header{
+-webkit-animation: animacion 2s;
+animation-name:animacion;
+animation-duration: 2s;
+}
+@-webkit-keyframes animacion {
+  0%   {margin-top: 150%;}
+  60%  {margin-top: -5%;}
+  100%  {margin-top: 0%;}
+}
